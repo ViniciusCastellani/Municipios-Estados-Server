@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Listar Municipios</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsividade -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/municipio_estado.css"/>
+    <script type="text/javascript" src="js/municipio_estado.js"></script>
+
+</head>
+<body onload="buscarMunicipios();">
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a class="w3-bar-item w3-button w3-padding-large" onclick="irTelaPrincipal()">HOME</a>
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="irTelaEstados()">ESTADOS</a>
+        <a href="#municipios" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MUNICIPIOS</a>
+    </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:40px">
+    <a href="#municipios" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MUNICIPIOS</a>
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="irTelaEstados()">ESTADOS</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px;">
+
+    <!-- Secão listar Estado -->
+    <div class="w3-padding-64 w3-card-24 w3-animate-opacity" id="municipios">
+        <div class="w3-container w3-content w3-padding-32" style="max-width:1000px;">
+            <h2 class="w3-wide w3-center w3-text-white">MUNICIPIOS</h2><br><br>
+            <div id="divPrincipal" style="height: 500px; overflow-y: auto;">
+                Carregando...
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <button class="w3-btn w3-green w3-round w3-padding-large w3-margin-bottom formButtons" onclick="irTelaEstados()">
+                    ESTADOS
+                </button>
+                <button class="w3-btn w3-blue-grey w3-round w3-padding-large w3-margin-bottom formButtons" onclick="irTelaPrincipal()">
+                    VOLTAR TELA PRINCIPAL
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

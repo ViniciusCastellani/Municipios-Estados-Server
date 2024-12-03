@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Página Inicial</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/municipio_estado.css"/>
+    <script type="text/javascript" src="js/municipio_estado.js"></script>
+</head>
+<body>
+
+<!-- TEMPLATE USADO -->
+<!-- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_band&stacked=h -->
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px;">
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="voltarTelaPrincipal()">HOME</a>
+            <a href="#upload-estados" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ARQUIVO ESTADO</a>
+            <a href="#upload-municipios" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ARQUIVO MUNICIPIO</a>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:40px">
+        <a href="#upload-estados" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ARQUIVO ESTADO</a>
+        <a href="#upload-municipios" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ARQUIVO MUNICIPIO</a>
+    </div>
+
+    <!-- Informacao do aluno -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="aluno">
+        <h1 class="w3-wide w3-center">ESTADO X MUNICIPIOS</h1><br>
+        <h3 class="w3-wide w3-center">ALUNOS</h3>
+        <p class="w3-opacity w3-center"><i>Informações dos alunos</i></p>
+        <p class="w3-justify w3-center">NOME: Vinicius Castellani Tonello, RA: 12325359</p>
+        <p class="w3-justify w3-center">NOME: Vinicius de Oliveira, RA: 12325538</p>
+        <p class="w3-opacity w3-center"><i>EXTRAS</i></p>
+        <p class="w3-justify w3-center">Modificado codigo do template responsivo para o assunto do exercicio</p><br><br>
+
+        <!-- Navigation buttons -->
+        <div class="w3-center w3-margin-top" id="opcoes">
+            <button class="w3-btn w3-blue-grey w3-round w3-padding-large formButtons" onclick="irTelaMunicipios()">MUNICIPIOS</button>
+            <button class="w3-btn w3-green w3-round w3-padding-large formButtons" onclick="irTelaEstados()">ESTADOS</button>
+        </div>
+    </div>
+
+    <!-- Seção para upload de CSV de Estados -->
+    <div class="w3-light-grey w3-padding-64 w3-animate-left" id="upload-estados">
+        <div class="w3-container w3-content w3-padding-32 " style="max-width:600px; margin-top:50px">
+            <h2 class="w3-wide w3-center w3-text-white">CARREGAR ESTADOS</h2><br>
+
+            <form id="uploadFormEstado" class="w3-center w3-text-white w3-padding">
+                <button type="button" onclick="enviarEstados()" class="w3-btn w3-purple w3-round w3-padding-large">CARREGAR</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="w3-black w3-padding-64 w3-animate-left" id="upload-municipios">
+        <div class="w3-container w3-content w3-padding-32 " style="max-width:600px; margin-top:50px">
+            <h2 class="w3-wide w3-center w3-text-white">CARREGAR MUNICIPIOS</h2><br>
+
+            <form id="uploadFormMunicipio" class="w3-center w3-text-white w3-padding">
+                <button type="button" onclick="enviarMunicipios()" class="w3-btn w3-purple w3-round w3-padding-large">CARREGAR</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

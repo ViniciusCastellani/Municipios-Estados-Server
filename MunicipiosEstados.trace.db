@@ -1,0 +1,12 @@
+2024-10-27 21:33:59.740091-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ESTADOS" not found (this database is empty); SQL statement:
+SELECT M.cod AS COD_MUNICIPIO, E.sigla as SIGLA_ESTADO, E.nome AS NOME_ESTADO, M.nome AS NOME_MUNICIPIO FROM ESTADOS E, MUNICIPIOS M WHERE M.cod_uf = E.cod  [42104-224]
+2024-11-28 19:20:12.967219-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ESTADOS" not found (this database is empty); SQL statement:
+SELECT M.cod AS COD_MUNICIPIO, E.sigla as SIGLA_ESTADO, E.nome AS NOME_ESTADO, M.nome AS NOME_MUNICIPIO FROM ESTADOS E, MUNICIPIOS M WHERE M.cod_uf = E.cod  [42104-224]
+2024-11-28 19:20:16.891459-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ESTADOS" not found (this database is empty); SQL statement:
+SELECT cod, nome, sigla FROM ESTADOS [42104-224]
+2024-11-28 19:20:54.714787-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ESTADOS" not found (this database is empty); SQL statement:
+SELECT cod, nome, sigla FROM ESTADOS [42104-224]
