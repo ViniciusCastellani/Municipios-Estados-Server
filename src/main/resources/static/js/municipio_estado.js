@@ -31,10 +31,10 @@ function atualizarTabelaMunicipios(listaMunicipios){
 
     tabela += "<thead>";
     tabela += "<tr>";
-    tabela += "<th>COD</th>";
-    tabela += "<th>SIGLA_UF</th>";
-    tabela += "<th>NOME_UF</th>";
-    tabela += "<th>NOME</th>";
+    tabela += "<th class='w3-text-black'>COD</th>";
+    tabela += "<th class='w3-text-black'>SIGLA_UF</th>";
+    tabela += "<th class='w3-text-black'>NOME_UF</th>";
+    tabela += "<th class='w3-text-black'>NOME</th>";
     tabela += "</tr>";
     tabela += "</thead>";
 
@@ -42,10 +42,10 @@ function atualizarTabelaMunicipios(listaMunicipios){
         var municipioData = JSON.stringify(municipio);
 
         tabela += "<tr>";
-        tabela += `<td>${municipio.cod}</td>`;
-        tabela += `<td>${municipio.sigla_uf}</td>`;
-        tabela += `<td>${municipio.nome_uf}</td>`;
-        tabela += `<td>${municipio.nome}</td>`;
+        tabela += `<td class='w3-text-black'>${municipio.cod}</td>`;
+        tabela += `<td class='w3-text-black'>${municipio.sigla_uf}</td>`;
+        tabela += `<td class='w3-text-black'>${municipio.nome_uf}</td>`;
+        tabela += `<td class='w3-text-black'>${municipio.nome}</td>`;
         tabela += "</tr>";
     });
 
@@ -61,9 +61,9 @@ function atualizarTabelaEstados(listaEstados){
 
         tabela += "<thead>";
         tabela += "<tr>";
-        tabela += "<th>COD</th>";
-        tabela += "<th>SIGLA</th>";
-        tabela += "<th>NOME</th>";
+        tabela += "<th class='w3-text-black'>COD</th>";
+        tabela += "<th class='w3-text-black'>SIGLA</th>";
+        tabela += "<th class='w3-text-black'>NOME</th>";
         tabela += "</tr>";
         tabela += "</thead>";
 
@@ -71,9 +71,9 @@ function atualizarTabelaEstados(listaEstados){
             var estadoData = JSON.stringify(estado);
 
             tabela += "<tr>";
-            tabela += `<td>${estado.cod}</td>`;
-            tabela += `<td>${estado.sigla}</td>`;
-            tabela += `<td>${estado.nome}</td>`;
+            tabela += `<td class='w3-text-black'>${estado.cod}</td>`;
+            tabela += `<td class='w3-text-black'>${estado.sigla}</td>`;
+            tabela += `<th class='w3-text-black'>${estado.nome}</td>`;
             tabela += "</tr>";
         });
 
